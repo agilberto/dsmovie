@@ -23,7 +23,7 @@ public class User {
 	
 	
 	public User(Long id, String email) {
-		super();
+		 
 		this.id = id;
 		this.email = email;
 	}
@@ -48,10 +48,7 @@ public class User {
 	}
 	
 	
-	
-	// private Movie movie;
-	 //private User user;
-	 //private Double value;
+	 
 	 
 	 
 	 
