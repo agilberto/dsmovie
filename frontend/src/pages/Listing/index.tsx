@@ -1,7 +1,20 @@
+
+import axios from "axios";
 import MovieCard from "components/MovieCard";
 import Pagination from "components/Pagination";
 
+import { BASE_URL } from "utils/request";
+ 
+
+
 function Listing() {
+   
+
+     axios.get(`${ BASE_URL }/movies/1`)
+     .then(response => {
+        console.log(response.data);
+     }); 
+     
 
     return (
 
@@ -32,7 +45,7 @@ function Listing() {
                     </div>
 
                     
-                    <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                    <div className="col-sm-6 col-lg-4 col-xl-3 mb-3 ">
                         <MovieCard />
                     </div>
 
